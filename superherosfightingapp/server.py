@@ -1,7 +1,7 @@
 from flask import Flask,Response,request,render_template,url_for
 from flask_cors import CORS
 import os
-import simplejson as json
+
 import requests
 import sys
 app = Flask(__name__)
