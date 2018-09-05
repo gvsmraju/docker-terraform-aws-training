@@ -49,3 +49,17 @@ You need :
 - See the link  between docker and your computer
 - See how to pass environment variables and port
 
+
+# STEP 2
+
+You need :
+- Creating ECR container on AWS
+- Creating TAG command
+- Pushing your container
+- Getting your container 
+- Switch your container
+- See this commands:
+    - git tag
+    - git push
+    - git pull
+- How to connect to AWS with awscli
