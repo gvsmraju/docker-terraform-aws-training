@@ -32,22 +32,3 @@ Also, you have three endpoints :
 
 
 The goal of this game is easy : Never die and dominate the world !
-
-
-# STEP 1
-
-You need :
-- Creating the Dockerfile
-- Searching and Implement commands to build your docker
-- Creating ECR container on AWS
-- Creating TAG
-- Pushing your container
-- See this commands :
-    - docker ps
-    - docker logs
-    - docker exec
-    - docker kill
-    - docker images
-    - docker inspect
-- See the link  between docker and your computer
-- See how to pass environment variables and port
