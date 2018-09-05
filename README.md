@@ -39,9 +39,6 @@ The goal of this game is easy : Never die and dominate the world !
 You need :
 - Creating the Dockerfile
 - Searching and Implement commands to build your docker
-- Creating ECR container on AWS
-- Creating TAG
-- Pushing your container
 - See this commands :
     - docker ps
     - docker logs
@@ -51,3 +48,4 @@ You need :
     - docker inspect
 - See the link  between docker and your computer
 - See how to pass environment variables and port
+
