@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Hello {{ data.name }}</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Hello, {{ data.name }}!</h1>
+        <p class="lead">Welcome to your home page {{data.name}}</p>
+        <img style="height: 200px; width: 100%; display: block;" src="/static/{{data.image}}"
+            alt="Card image">
+        <hr class="my-4">
+        <p>Your life : </p>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: {{data.life}}%" aria-valuenow="{{data.life}}" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <hr class="my-4">
+
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/my" role="button">Refresh</a>
+        </p>
+    </div>
+</body>
+
+</html>
