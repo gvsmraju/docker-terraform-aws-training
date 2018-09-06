@@ -17,7 +17,7 @@ resource "aws_launch_configuration" "ant_api" {
     create_before_destroy = true
   }
 
-  security_groups             = ["sg-0ab131013adcde190"]
+  security_groups             = "${var.security_groups}"
   associate_public_ip_address = "true"
   key_name                    = "${var.keypair_name}"
   iam_instance_profile        = "demo-iam-instance-role"
@@ -29,7 +29,7 @@ resource "aws_autoscaling_group" "ant_api" {
   max_size             = "5"
   min_size             = "2"
   desired_capacity     = "2"
-  vpc_zone_identifier  = ["subnet-09172beb19273a379", "subnet-06de462142642e0c5"]
+  vpc_zone_identifier  = "${var.vpc_subnets}"
   launch_configuration = "${aws_launch_configuration.ant_api.name}"
   health_check_type    = "EC2"
   depends_on           = ["aws_launch_configuration.ant_api"]

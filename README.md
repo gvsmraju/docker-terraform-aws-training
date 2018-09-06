@@ -91,3 +91,28 @@ What you will learn with this :
 chmod 400 /tmp/my_aws_demo.pem
 ssh  -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/my_aws_demo.pem ec2-user@<IP>
 ```
+
+# STEP 4
+
+This step consists to learn how you can deploy your container inside AWS.
+For this, you will need to:
+
+- One Terraform file to create the container
+- One Terraform file to create the elb
+- One Terraform file to create the ecs
+- One Json file to describe the container
+- Refactor your code !
+
+After this, your hero is available on this URL :
+
+```
+open http://demo-capamerica-lb-983227971.us-west-1.elb.amazonaws.com/my
+```
+
+If you try to kill yourself, you can with this endpoint :
+
+```
+open http://demo-capamerica-lb-983227971.us-west-1.elb.amazonaws.com/attack
+```
+
+Maybee we can the log system.

@@ -22,3 +22,30 @@ variable "my_aws_key" {
 variable "keypair_name" {
   description = "Name of your key"
 }
+
+variable "vpc_subnets" {
+  description = "List of subnets in your VPC"
+  type        = "list"
+}
+
+variable "security_groups" {
+  description = "List of security groups in your VPC"
+  type        = "list"
+}
+
+variable "lb_security_groups" {
+  description = "List of security groups in your VPC"
+  type        = "list"
+}
+
+variable "hero" {
+  description = "NAme of your HERO"
+}
+
+variable "cluster_name" {
+  description = "Name of your cluster"
+}
+
+variable "docker_url" {
+  description = "URL of your docker"
+}
