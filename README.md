@@ -132,3 +132,15 @@ We constate it's very easy to die... and if we add a lot of dockers now :
 - Add the logging system for your containers
 - See how the deployement works.
 - You can add one endpoint and redeploy your API to see how it works.
+
+
+# STEP 6
+
+This step consists to deploy the lambda to destroy all your servers
+
+For this, you will need to:
+
+- See how Serverless works
+- How to increment the number of servers
+- How to play with autoscaling
+
