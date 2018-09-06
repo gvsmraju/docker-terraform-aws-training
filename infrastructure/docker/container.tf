@@ -20,7 +20,7 @@ resource "aws_ecs_service" "hero" {
   name                               = "myhero-${var.hero}"
   cluster                            = "arn:aws:ecs:us-west-1:371075088726:cluster/${var.cluster_name}"
   task_definition                    = "${aws_ecs_task_definition.hero.arn}"
-  desired_count                      = "2"
+  desired_count                      = "8"
   depends_on                         = ["aws_lb_listener.hero"]
   deployment_minimum_healthy_percent = 50
   deployment_maximum_percent         = 100

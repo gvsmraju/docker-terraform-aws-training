@@ -115,4 +115,20 @@ If you try to kill yourself, you can with this endpoint :
 open http://demo-capamerica-lb-983227971.us-west-1.elb.amazonaws.com/attack
 ```
 
-Maybee we can the log system.
+
+# STEP 5
+
+This step consists to play with your docker cluster to destroy any other heroes.
+
+
+```
+curl -XPOST --data '{"hero" : "http://<IP>/attack"}' http://demo-capamerica-lb-983227971.us-west-1.elb.amazonaws.com/fight
+```
+
+We constate it's very easy to die... and if we add a lot of dockers now :
+
+- Change the container.tf file
+- Change the elb file to change the timeout or add sticky session
+- Add the logging system for your containers
+- See how the deployement works.
+- You can add one endpoint and redeploy your API to see how it works.

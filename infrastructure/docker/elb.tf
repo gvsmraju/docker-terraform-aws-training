@@ -10,7 +10,7 @@ resource "aws_lb_target_group" "hero" {
 
   stickiness {
     type    = "lb_cookie"
-    enabled = false
+    enabled = true
   }
 
   health_check = {
