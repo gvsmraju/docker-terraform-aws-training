@@ -144,3 +144,13 @@ For this, you will need to:
 - How to increment the number of servers
 - How to play with autoscaling
 
+
+# STEP 7
+
+Easy to create, easy to destroy...
+
+This step consists to understand why it's cool but very dangerous to use this tools as Terraform, Serverless.
+
+To destroy everything, you just need to run one command :
+- terraform destroy --var-file=staging.tfvars
+- serverless destroy
