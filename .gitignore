@@ -1,3 +1,6 @@
 superherosfightingapp/venv
 superherosfightingapp/__pycache__
 .DS_Store
+**/.terraform
+**/terraform.tfstate
+**/terraform.tfstate.backup
