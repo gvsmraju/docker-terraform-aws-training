@@ -55,35 +55,36 @@ What you will learn with this :
 
 # STEP 2
 
-You need :
-- Creating ECR container on AWS
-- Creating TAG command
-- Pushing your container
-- Getting your container 
-- Switch your container
-- See this commands:
-    - git tag
-    - git push
-    - git pull
+This step consists to learn how to shared your docker.
+For this, you will need to:
+
+- Create ECR container on AWS
+- Create the TAG command
+- Create the push command
+
+What you will learn with this :
+
+- The command git tag
+- The command git push
+- The command git pull
 - How to connect to AWS with awscli
 
 
 # STEP 3
 
-You need :
-- Creating your first Docker Cluster with Terraform
-- See this commands:
-    - terraform init
-    - terraform workspace select staging
-    - terraform plan
-    - terraform apply --var-file=staging.tfvars
-- Terraform Documentation
-- How to create docker cluster
-- How to connect to the docker cluster
-- How to use docker inside the cluster
-- See all the components
-- How to use autoscaling
+This step consists to learn how Terraform and AWS works.
+For this, you will need to:
 
+- Create your first Docker Cluster with Terraform
+
+What you will learn with this :
+
+- The command terraform init
+- The command terraform workspace select staging
+- The command terraform plan
+- The command terraform apply --var-file=staging.tfvars
+- How to search inside the Terraform documentation
+- How to use autoscaling
 - To connect to your server
 
 ```
