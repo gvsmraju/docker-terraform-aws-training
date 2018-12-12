@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh "make install"
-        sh "make build"
+        sh "cd superherosfightingapp;make install"
+        sh "cd superherosfightingapp;make build"
       }
     }
     stage('Test') {
@@ -16,7 +16,7 @@ pipeline {
     stage('Running') {
       steps {
         echo 'Deploying....'
-        sh "make run"
+        sh "cd superherosfightingapp;make run"
       }
     }
   }
