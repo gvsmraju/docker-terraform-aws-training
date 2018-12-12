@@ -9,8 +9,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh 'cd docker-terraform-aws-training/superherosfightingapp && make install'
-        sh 'cd docker-terraform-aws-training/superherosfightingapp && make build'
+        sh 'cd superherosfightingapp && make install'
+        sh 'cd superherosfightingapp && make build'
       }
     }
     stage('Test') {
@@ -21,7 +21,7 @@ pipeline {
     stage('Running') {
       steps {
         echo 'Deploying....'
-        sh 'cd docker-terraform-aws-training/superherosfightingapp && make run'
+        sh 'cd superherosfightingapp && make run'
       }
     }
     
