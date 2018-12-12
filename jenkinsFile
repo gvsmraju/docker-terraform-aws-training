@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        make install
-        make build
+        sh "make install"
+        sh "make build"
       }
     }
     stage('Test') {
@@ -16,7 +16,7 @@ pipeline {
     stage('Running') {
       steps {
         echo 'Deploying....'
-        make run
+        sh "make run"
       }
     }
   }
